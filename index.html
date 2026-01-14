@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Rout | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 180px;
+      margin: auto;
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      color: var(--gray);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* ABOUT */
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .skill {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .project {
+      background: white;
+      padding: 15px;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    }
+
+    .project h3 {
+      margin: 12px 0 6px;
+    }
+
+    .project p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: var(--primary);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* TABLET */
+    @media (min-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+      }
+
+      .hero img {
+        margin: 0;
+      }
+    }
+
+    /* PC */
+    @media (min-width: 1024px) {
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="Profile">
+    <div>
+      <h1>Hi, I’m Sandeep Rout 👋</h1>
+      <p>
+        Digital professional helping startups and brands grow through
+        technology, content, and media presence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I specialize in building modern web experiences, digital platforms,
+      and growth-driven solutions. I work closely with startups, agencies,
+      and businesses to create impact through clean design and strategy.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">SEO</div>
+      <div class="skill">Content Strategy</div>
+      <div class="skill">PR & Media</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+        <h3>Startup Website</h3>
+        <p>Mobile-first website built for a growing startup.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="">
+        <h3>PR Campaign</h3>
+        <p>Media placements across news portals and newspapers.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+        <h3>Content Platform</h3>
+        <p>SEO-optimized content platform with lead generation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Email me to discuss your project</p>
+    <a href="mailto:sandeeprout8797@gmail.com">Contact Me</a>
+  </section>
+
+</body>
+</html>
